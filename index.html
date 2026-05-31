@@ -1,155 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Zainab Abbas | CFO & Business Intelligence Leader</title>
+<title>Zainab Abbas | CFO Portfolio</title>
 
 <style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
 body{
-    margin:0;
-    font-family:Arial, sans-serif;
-    background:#f5f7fa;
-    color:#333;
+font-family:Arial, sans-serif;
+background:#ffffff;
+color:#111111;
+line-height:1.6;
 }
 
-header{
-    background:#0A2540;
-    color:white;
-    text-align:center;
-    padding:80px 20px;
+nav{
+background:#111111;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
-header h1{
-    font-size:52px;
-    margin-bottom:10px;
+.logo{
+color:#D4AF37;
+font-size:24px;
+font-weight:bold;
 }
 
-header p{
-    font-size:20px;
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
 }
 
-section{
-    max-width:1100px;
-    margin:auto;
-    padding:50px 20px;
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
 }
 
-h2{
-    color:#0A2540;
+.hero{
+padding:80px 10%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:50px;
+background:#f8f8f8;
+}
+
+.hero img{
+width:320px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.15);
+}
+
+.hero-text h1{
+font-size:56px;
+color:#111111;
+margin-bottom:10px;
+}
+
+.hero-text h2{
+font-size:26px;
+color:#D4AF37;
+margin-bottom:20px;
+}
+
+.hero-text p{
+font-size:20px;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 24px;
+margin-right:10px;
+background:#D4AF37;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:8px;
+}
+
+.section{
+padding:80px 10%;
+}
+
+.section h2{
+font-size:36px;
+margin-bottom:30px;
+color:#111111;
 }
 
 .card{
-    background:white;
-    padding:25px;
-    border-radius:10px;
-    margin-bottom:25px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+margin-bottom:20px;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.skills ul{
+padding-left:20px;
 }
 
 .project{
-    margin-bottom:20px;
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+margin-bottom:30px;
+}
+
+.project img{
+width:100%;
+border-radius:10px;
+margin-bottom:20px;
 }
 
 footer{
-    background:#0A2540;
-    color:white;
-    text-align:center;
-    padding:25px;
+background:#111111;
+color:white;
+text-align:center;
+padding:40px;
+}
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero img{
+width:250px;
+}
+
+.hero-text h1{
+font-size:40px;
+}
+
 }
 
 </style>
+
 </head>
 
 <body>
 
-<header>
+<nav>
+
+<div class="logo">
+Zainab Abbas
+</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#expertise">Expertise</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#achievements">Achievements</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<img src="assets/images/profile.jpg" alt="Zainab Abbas">
+
+<div class="hero-text">
 
 <h1>Zainab Abbas</h1>
 
-<p>
-Chief Financial Officer | ACCA | Power BI Specialist
-</p>
+<h2>Chief Financial Officer | ACCA</h2>
 
 <p>
 Finance Transformation • Business Intelligence • Strategic Planning
 </p>
 
-</header>
+<a class="btn" href="https://www.linkedin.com/in/zainab-abbass/" target="_blank">
+LinkedIn
+</a>
 
-<section>
+<a class="btn" href="https://github.com/zainab-abbass" target="_blank">
+GitHub
+</a>
 
-<div class="card">
-
-<h2>About Me</h2>
-
-<p>
-I am a Chief Financial Officer with experience in financial transformation,
-business intelligence, budgeting, forecasting, internal audit,
-process improvement, and strategic planning.
-
-My passion is turning complex business data into meaningful insights
-through Power BI and modern analytics solutions that support executive
-decision-making.
-</p>
-
-</div>
-
-<div class="card">
-
-<h2>Featured Projects</h2>
-
-<div class="project">
-<h3>🏥 Healthcare Analytics Dashboard</h3>
-<p>
-Executive healthcare dashboard featuring revenue, profitability,
-patient analysis, balance sheet performance, and cash position monitoring.
-</p>
-</div>
-
-<div class="project">
-<h3>💰 Accounts Receivable Dashboard</h3>
-<p>
-Interactive receivables dashboard focused on collections performance,
-aging analysis, customer payment trends, and working capital management.
-</p>
-</div>
-
-<div class="project">
-<h3>🪑 Furniture Retail Dashboard</h3>
-<p>
-Retail sales dashboard providing insights into sales performance,
-product profitability, customer trends, and executive KPIs.
-</p>
-</div>
-
-</div>
-
-<div class="card">
-
-<h2>Key Expertise</h2>
-
-<ul>
-<li>Financial Planning & Analysis (FP&A)</li>
-<li>Power BI & Business Intelligence</li>
-<li>Financial Transformation</li>
-<li>Budgeting & Forecasting</li>
-<li>Internal Audit & Controls</li>
-<li>Executive Reporting</li>
-<li>Strategic Planning</li>
-</ul>
+<a class="btn" href="Zainab-Abbas-Resume.pdf" target="_blank">
+Resume
+</a>
 
 </div>
 
 </section>
 
-<footer>
+<section id="about" class="section">
 
-<p>© 2026 Zainab Abbas</p>
+<h2>About Me</h2>
 
-</footer>
+<div class="card">
+
+<p>
+
+I am a Chief Financial Officer with 15+ years of experience leading finance transformation, strategic planning, business intelligence, internal audit, governance, and performance management initiatives across Healthcare, Retail, and Technology sectors.
+
+My expertise combines executive finance leadership with modern analytics capabilities using Microsoft Power BI and Google Looker Studio to transform business data into actionable insights that support executive decision-making.
+
+</p>
+
+</div>
+
+</section>
 
 </body>
 </html>
