@@ -37,48 +37,75 @@ justify-content:space-between;
 align-items:center;
 z-index:1000;
 }
-
 .logo{
+position:relative;
+width:70px;
+height:70px;
+font-family:Georgia, serif;
+}
+
+.logo .z{
+position:absolute;
+font-size:64px;
 color:#D4AF37;
-font-size:28px;
-font-weight:bold;
+left:0;
+top:0;
+font-weight:400;
 }
 
-nav ul{
-display:flex;
-list-style:none;
-gap:30px;
-}
-
-nav ul li a{
-color:white;
-text-decoration:none;
-font-weight:bold;
-transition:.3s;
-}
-
-nav ul li a:hover{
+.logo .a{
+position:absolute;
+font-size:64px;
 color:#D4AF37;
+left:25px;
+top:20px;
+font-weight:400;
 }
-
 /* HERO */
 
 .hero{
 background:#000;
 color:white;
-min-height:100vh;
 display:flex;
 align-items:center;
 justify-content:center;
-padding:120px 10%;
-gap:80px;
+padding:120px 10% 50px;
+gap:60px;
+}
+
+.hero-text{
+max-width:900px;
+}
+
+.hero img{
+width:320px;
+border-radius:20px;
+box-shadow:0 10px 40px rgba(0,0,0,.35);
+}
+
+.hero-text h1{
+font-size:72px;
+margin-bottom:15px;
+}
+
+.hero-text h2{
+font-size:30px;
+color:#D4AF37;
+margin-bottom:20px;
+line-height:1.4;
+}
+
+.hero-text p{
+font-size:22px;
+color:#ddd;
+margin-bottom:25px;
+line-height:1.8;
 }
 
 .hero img{
 width:350px;
 border-radius:20px;
-border:3px solid #D4AF37;
-box-shadow:0 0 30px rgba(212,175,55,.3);
+box-shadow:0 15px 40px rgba(0,0,0,.35);
 }
 
 .hero-text h1{
@@ -315,9 +342,28 @@ font-size:36px;
 
 <nav>
 
-<div class="logo">
-Zainab Abbas
-</div>
+.logo{
+position:relative;
+width:80px;
+height:70px;
+font-family:Georgia, serif;
+}
+
+.logo .z{
+position:absolute;
+font-size:60px;
+color:#D4AF37;
+left:5px;
+top:0;
+}
+
+.logo .a{
+position:absolute;
+font-size:60px;
+color:#D4AF37;
+left:28px;
+top:18px;
+}
 
 <ul>
 <li><a href="#about">About</a></li>
