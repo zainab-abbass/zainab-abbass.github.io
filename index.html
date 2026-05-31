@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Zainab Abbas | CFO Portfolio</title>
+<title>Zainab Abbas | CFO | ACCA | Business Intelligence Leader</title>
 
 <style>
 
@@ -13,134 +14,228 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
+scroll-behavior:smooth;
 }
 
 body{
 font-family:Arial, sans-serif;
 background:#ffffff;
-color:#111111;
-line-height:1.6;
+color:#111;
+line-height:1.8;
 }
 
+/* NAVIGATION */
+
 nav{
-background:#111111;
+position:fixed;
+top:0;
+width:100%;
+background:#000;
 padding:20px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
+z-index:1000;
 }
 
 .logo{
 color:#D4AF37;
-font-size:24px;
+font-size:28px;
 font-weight:bold;
 }
 
 nav ul{
 display:flex;
 list-style:none;
-gap:25px;
+gap:30px;
 }
 
 nav ul li a{
 color:white;
 text-decoration:none;
 font-weight:bold;
+transition:.3s;
 }
 
+nav ul li a:hover{
+color:#D4AF37;
+}
+
+/* HERO */
+
 .hero{
-padding:80px 10%;
+background:#000;
+color:white;
+min-height:100vh;
 display:flex;
 align-items:center;
-justify-content:space-between;
-gap:50px;
-background:#f8f8f8;
+justify-content:center;
+padding:120px 10%;
+gap:80px;
 }
 
 .hero img{
-width:320px;
-border-radius:15px;
-box-shadow:0 5px 20px rgba(0,0,0,0.15);
+width:350px;
+border-radius:20px;
+border:3px solid #D4AF37;
+box-shadow:0 0 30px rgba(212,175,55,.3);
 }
 
 .hero-text h1{
-font-size:56px;
-color:#111111;
-margin-bottom:10px;
+font-size:72px;
+margin-bottom:15px;
 }
 
 .hero-text h2{
-font-size:26px;
+font-size:30px;
 color:#D4AF37;
-margin-bottom:20px;
+margin-bottom:25px;
 }
 
 .hero-text p{
-font-size:20px;
-margin-bottom:30px;
+font-size:22px;
+color:#ddd;
+margin-bottom:35px;
 }
 
 .btn{
 display:inline-block;
-padding:12px 24px;
-margin-right:10px;
+padding:14px 28px;
 background:#D4AF37;
-color:black;
-text-decoration:none;
+color:#000;
 font-weight:bold;
+text-decoration:none;
 border-radius:8px;
+margin-right:12px;
+transition:.3s;
 }
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+/* SECTIONS */
 
 .section{
-padding:80px 10%;
+padding:100px 10%;
 }
 
-.section h2{
-font-size:36px;
-margin-bottom:30px;
-color:#111111;
+.section-title{
+font-size:48px;
+margin-bottom:40px;
 }
 
 .card{
 background:white;
-padding:30px;
-border-radius:12px;
-box-shadow:0 4px 12px rgba(0,0,0,0.08);
-margin-bottom:20px;
+padding:40px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
 }
 
-.skills{
+/* ABOUT */
+
+.about-story{
+font-size:20px;
+line-height:2;
+}
+
+/* EXPERTISE */
+
+.expertise{
+background:#000;
+color:white;
+}
+
+.expertise h2{
+color:#D4AF37;
+}
+
+.expertise-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
 }
 
-.skills ul{
-padding-left:20px;
+.expertise-card{
+background:#111;
+border:1px solid #D4AF37;
+padding:30px;
+border-radius:15px;
+text-align:center;
+font-weight:bold;
+transition:.3s;
 }
+
+.expertise-card:hover{
+transform:translateY(-5px);
+box-shadow:0 0 20px rgba(212,175,55,.25);
+}
+
+/* PROJECTS */
 
 .project{
 background:white;
-padding:25px;
-border-radius:12px;
-box-shadow:0 4px 12px rgba(0,0,0,0.08);
-margin-bottom:30px;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+margin-bottom:40px;
 }
 
 .project img{
 width:100%;
-border-radius:10px;
-margin-bottom:20px;
+display:block;
 }
 
+.project-content{
+padding:30px;
+}
+
+.project h3{
+font-size:30px;
+margin-bottom:15px;
+}
+
+/* ACHIEVEMENTS */
+
+.achievements{
+background:#000;
+color:white;
+}
+
+.achievements h2{
+color:#D4AF37;
+}
+
+.achievements ul{
+line-height:2.2;
+font-size:20px;
+padding-left:20px;
+}
+
+/* CONTACT */
+
+.contact-box{
+text-align:center;
+}
+
+.contact-box a{
+color:#D4AF37;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* FOOTER */
+
 footer{
-background:#111111;
+background:#000;
 color:white;
 text-align:center;
 padding:40px;
 }
 
-@media(max-width:900px){
+/* MOBILE */
+
+@media(max-width:1000px){
 
 .hero{
 flex-direction:column;
@@ -148,35 +243,39 @@ text-align:center;
 }
 
 .hero img{
-width:250px;
+width:280px;
+}
+
+.hero-text h1{
+font-size:48px;
+}
+
+.hero-text h2{
+font-size:24px;
+}
+
+.expertise-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:600px){
+
+.expertise-grid{
+grid-template-columns:1fr;
 }
 
 .hero-text h1{
 font-size:40px;
 }
 
+.section-title{
+font-size:36px;
 }
 
-  .expertise-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
 }
 
-.expertise-card{
-background:#111;
-border:1px solid #D4AF37;
-padding:25px;
-border-radius:12px;
-text-align:center;
-font-weight:600;
-transition:0.3s;
-}
-
-.expertise-card:hover{
-transform:translateY(-5px);
-box-shadow:0 0 20px rgba(212,175,55,0.3);
-}
 </style>
 
 </head>
@@ -201,29 +300,23 @@ Zainab Abbas
 
 <section class="hero">
 
-<img src="assets/images/profile.jpg" alt="Zainab Abbas">
+<img src="assets/images/profile.jpg">
 
 <div class="hero-text">
 
 <h1>Zainab Abbas</h1>
 
-<h2>Chief Financial Officer | ACCA</h2>
+<h2>Chief Financial Officer | ACCA | Business Intelligence Leader</h2>
 
 <p>
-Finance Transformation • Business Intelligence • Strategic Planning
+Finance Transformation • Executive Reporting • Business Intelligence • Performance Analytics
 </p>
 
-<a class="btn" href="https://www.linkedin.com/in/zainab-abbass/" target="_blank">
-LinkedIn
-</a>
+<a class="btn" href="https://www.linkedin.com/in/zainab-abbass/" target="_blank">LinkedIn</a>
 
-<a class="btn" href="https://github.com/zainab-abbass" target="_blank">
-GitHub
-</a>
+<a class="btn" href="https://github.com/zainab-abbass" target="_blank">GitHub</a>
 
-<a class="btn" href="Zainab-Abbas-Resume.pdf" target="_blank">
-Resume
-</a>
+<a class="btn" href="Zainab-Abbas-Resume.pdf" target="_blank">Resume</a>
 
 </div>
 
@@ -231,65 +324,174 @@ Resume
 
 <section id="about" class="section">
 
-<h2>About Me</h2>
+<h2 class="section-title">About Me</h2>
 
-<div class="card">
+<div class="card about-story">
 
-<p>
 My career began in finance, but over time it evolved into something much bigger — understanding how businesses truly operate beneath the numbers.
+
 <br><br>
 
 Starting in healthcare and progressing from Accountant to Chief Accountant, I built a strong foundation in financial management, reporting, and operational discipline. A move to Dubai expanded my exposure to Internal Audit, Management Accounting, business operations, profitability analysis, and performance management while completing ACCA.
+
 <br><br>
 
 Today, as Chief Financial Officer at Geeks Technology, I lead financial strategy, business performance, governance, reporting transformation, and operational improvement initiatives.
+
 <br><br>
 
 Along the way, one realization became clear: businesses rarely struggle because they lack data. They struggle because information is fragmented and difficult to translate into meaningful decisions.
+
 <br><br>
 
 That realization sparked my journey into Business Intelligence, analytics, and executive reporting — combining finance, operations, and modern analytics to help organizations make better decisions.
+
+</div>
+
+</section>
+
+<section id="expertise" class="section expertise">
+
+<h2 class="section-title">Areas of Expertise</h2>
+
+<div class="expertise-grid">
+
+<div class="expertise-card">Financial Strategy & Leadership</div>
+<div class="expertise-card">Financial Planning & Analysis (FP&A)</div>
+<div class="expertise-card">Financial Modelling</div>
+<div class="expertise-card">Budgeting & Forecasting</div>
+
+<div class="expertise-card">Cost Optimization</div>
+<div class="expertise-card">Business Intelligence</div>
+<div class="expertise-card">Executive Dashboards</div>
+<div class="expertise-card">Performance Management</div>
+
+<div class="expertise-card">ERP Implementation</div>
+<div class="expertise-card">Governance & Internal Audit</div>
+<div class="expertise-card">Process Transformation</div>
+<div class="expertise-card">Data Analytics & Reporting</div>
+
+</div>
+
+</section>
+
+<section id="projects" class="section">
+
+<h2 class="section-title">Featured Projects</h2>
+
+<div class="project">
+
+<img src="assets/images/healthcare-dashboard.png">
+
+<div class="project-content">
+
+<h3>Healthcare Financial Performance Dashboard</h3>
+
+<p>
+Executive healthcare analytics dashboard covering revenue, profitability, patient analytics, balance sheet performance and cash position monitoring.
+</p>
+
+</div>
+
+</div>
+
+<div class="project">
+
+<img src="assets/images/ar-dashboard.png">
+
+<div class="project-content">
+
+<h3>Accounts Receivable Analytics Dashboard</h3>
+
+<p>
+Interactive receivables dashboard focused on collections performance, aging analysis, overdue tracking, customer payment trends and working capital visibility.
+</p>
+
+</div>
+
+</div>
+
+<div class="project">
+
+<img src="assets/images/furniture-dashboard.png">
+
+<div class="project-content">
+
+<h3>Furniture Retail Sales Analytics Dashboard</h3>
+
+<p>
+Executive retail analytics dashboard built to provide visibility into sales performance, profitability, customer trends and executive KPIs.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="achievements" class="section achievements">
+
+<h2 class="section-title">Achievements & Certifications</h2>
+
+<ul>
+
+<li>Chief Financial Officer leading finance transformation and strategic business initiatives.</li>
+
+<li>15+ years of experience across Healthcare, Retail and Technology sectors.</li>
+
+<li>Gold Medalist – Master of Commerce (M.Com).</li>
+
+<li>ACCA (Association of Chartered Certified Accountants).</li>
+
+<li>Microsoft Certified: Power BI Data Analyst Associate.</li>
+
+<li>Google Looker Studio Certified.</li>
+
+<li>Led enterprise-wide reporting transformation using Microsoft Power BI.</li>
+
+<li>Established Internal Audit and Governance Frameworks.</li>
+
+<li>Contributed to ISO certification and operational excellence initiatives.</li>
+
+</ul>
+
+</section>
+
+<section id="contact" class="section">
+
+<h2 class="section-title">Let's Connect</h2>
+
+<div class="card contact-box">
+
+<p>
+
+LinkedIn:
+<br>
+
+<a href="https://www.linkedin.com/in/zainab-abbass/">
+linkedin.com/in/zainab-abbass
+</a>
+
+<br><br>
+
+GitHub:
+<br>
+
+<a href="https://github.com/zainab-abbass">
+github.com/zainab-abbass
+</a>
+
 </p>
 
 </div>
 
 </section>
 
-  <section id="expertise" style="background:#000;color:white;padding:80px 10%;">
+<footer>
 
-<h2 style="color:#D4AF37;font-size:42px;margin-bottom:50px;">
-Areas of Expertise
-</h2>
+© 2026 Zainab Abbas | Chief Financial Officer | ACCA
 
-<div class="expertise-grid">
-
-<div class="expertise-card">Financial Strategy & Leadership</div>
-
-<div class="expertise-card">Financial Planning & Analysis (FP&A)</div>
-
-<div class="expertise-card">Financial Modelling</div>
-
-<div class="expertise-card">Budgeting & Forecasting</div>
-
-<div class="expertise-card">Cost Optimization</div>
-
-<div class="expertise-card">Business Intelligence</div>
-
-<div class="expertise-card">Power BI & Executive Dashboards</div>
-
-<div class="expertise-card">Google Looker Studio</div>
-
-<div class="expertise-card">ERP Implementation</div>
-
-<div class="expertise-card">Governance & Internal Audit</div>
-
-<div class="expertise-card">Performance Management</div>
-
-<div class="expertise-card">Process Transformation</div>
-
-</div>
-
-</section>
+</footer>
 
 </body>
 </html>
