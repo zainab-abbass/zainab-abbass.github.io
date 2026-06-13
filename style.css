@@ -180,6 +180,19 @@ nav{
 .impact-card h3{ color:#B8932B; font-size:22px; margin-bottom:14px; line-height:1.3; }
 .impact-card p{ font-size:17px; line-height:1.7; color:#333; }
 
+/* gold line icons (theme-matched, no color) */
+.impact-icon{ display:block; line-height:0; margin-bottom:20px; }
+.impact-icon svg{ width:44px; height:44px; stroke:#D4AF37; color:#D4AF37; fill:none; }
+.impact-card:hover .impact-icon svg{ stroke:#B8932B; color:#B8932B; }
+
+/* closing leadership statement */
+.impact-statement{
+    max-width:1000px; margin:64px auto 0; text-align:center;
+    font-size:clamp(21px,2.6vw,30px); line-height:1.5;
+    font-style:italic; font-weight:600; color:#B8932B;
+    padding-top:48px; border-top:1px solid rgba(212,175,55,.4);
+}
+
 /* =========================================================
    SECTION 5 · TRANSFORMATION ACHIEVEMENTS  (dark · 2-col)
    ========================================================= */
