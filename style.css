@@ -255,12 +255,23 @@ nav{
 }
 
 /* =========================================================
-   SECTION 8 · LEADERSHIP PHILOSOPHY  (dark · quote)
+   SECTION 8 · LEADERSHIP PHILOSOPHY
+   Distinct: lifted #0d0d0d tone + soft gold glow + oversized quote mark
    ========================================================= */
 .philosophy{
-    background:#000; color:#fff; padding:110px 10%; text-align:center;
+    position:relative; overflow:hidden;
+    background:radial-gradient(ellipse 70% 60% at 50% 42%, rgba(212,175,55,.12), rgba(212,175,55,0) 70%), #0d0d0d;
+    color:#fff; padding:130px 10%; text-align:center;
+    border-top:1px solid rgba(212,175,55,.12);
+    border-bottom:1px solid rgba(212,175,55,.12);
 }
-.philosophy .gold-line{ margin:0 auto 40px; }
+.phil-inner{ position:relative; max-width:1000px; margin:0 auto; }
+.phil-mark{
+    display:block; font-family:Georgia, "Times New Roman", serif;
+    font-size:clamp(96px,12vw,170px); line-height:.5; color:#D4AF37;
+    opacity:.4; margin-bottom:8px;
+}
+.philosophy .section-label{ margin-bottom:26px; }
 .philosophy blockquote{
     font-size:clamp(26px,4vw,46px); line-height:1.45;
     color:#D4AF37; font-style:italic; font-weight:600;
@@ -272,26 +283,33 @@ nav{
 }
 
 /* =========================================================
-   CONTACT / CONNECT  (dark · closing CTA)
+   CONTACT / CONNECT  (closing CTA)
+   Distinct: pure black field with a single framed gold-bordered panel
+   (bookends the Featured article box at the top of the page)
    ========================================================= */
-.connect{
-    background:#000; color:#fff; padding:90px 10% 110px; text-align:center;
+.connect{ background:#000; color:#fff; padding:90px 10% 110px; }
+.connect-panel{
+    max-width:920px; margin:0 auto; text-align:center;
+    background:#0d0d0d; border:1px solid rgba(212,175,55,.3);
+    border-radius:20px; padding:clamp(36px,5vw,64px);
+    box-shadow:0 0 45px rgba(212,175,55,.07);
 }
-.connect .section-title{ color:#fff; max-width:920px; margin:0 auto 30px; line-height:1.25; }
+.connect-panel .section-label{ margin-bottom:20px; }
+.connect .section-title{ color:#fff; max-width:760px; margin:0 auto 26px; line-height:1.25; }
 .connect-text{
     font-size:clamp(18px,2.1vw,21px); color:#cccccc;
-    max-width:820px; margin:0 auto 20px; line-height:1.9;
+    max-width:720px; margin:0 auto 18px; line-height:1.9;
 }
 .connect-divider{
     width:120px; height:2px; background:rgba(212,175,55,.5);
-    margin:50px auto 32px; border-radius:2px;
+    margin:44px auto 30px; border-radius:2px;
 }
 .connect-label{
     color:#D4AF37; letter-spacing:3px; text-transform:uppercase;
-    font-size:15px; margin-bottom:28px;
+    font-size:15px; margin-bottom:26px;
 }
 .connect-buttons{
-    display:flex; justify-content:center; gap:18px; flex-wrap:wrap; margin-bottom:30px;
+    display:flex; justify-content:center; gap:18px; flex-wrap:wrap; margin-bottom:28px;
 }
 .connect-buttons .btn{ margin:0; }
 .connect-email{ font-size:19px; }
