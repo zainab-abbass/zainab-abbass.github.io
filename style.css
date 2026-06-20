@@ -372,3 +372,9 @@ footer{ background:#000; color:#fff; text-align:center; padding:40px; border-top
     .achieve-card{ padding:28px 26px; }
     .impact-card{ padding:34px 28px; }
 }
+/* tighter heading tracking for a sleeker look */
+h1, h2, h3,
+.hero-text h1, .section-title, .about-title,
+.featured-title, .featured-subtitle{
+    letter-spacing:-0.02em;
+}
