@@ -30,15 +30,11 @@ nav{
     z-index:1000;
 }
 .logo{
-    position:relative; display:block; width:62px; height:54px;
-    font-family:Georgia, "Times New Roman", serif;
+    display:block; width:48px; height:54px;
+    background:url('https://zainababbas.com/logo.png') center/contain no-repeat;
+    font-size:0;              /* hides the old ZA text */
 }
-.logo .z, .logo .a{
-    position:absolute; font-size:56px; color:#D4AF37;
-    font-weight:400; line-height:1;
-}
-.logo .z{ left:4px; top:-4px; }
-.logo .a{ left:22px; top:14px; }
+.logo .z, .logo .a{ display:none; }   /* hides the old letter spans */
 
 .nav-links{ display:flex; list-style:none; gap:35px; }
 .nav-links a{
