@@ -2,25 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- Core pages -->
-  <url><loc>https://zainababbas.com/</loc><lastmod>2026-06-20</lastmod><priority>1.0</priority></url>
-  <url><loc>https://zainababbas.com/projects/</loc><lastmod>2026-06-20</lastmod><priority>0.8</priority></url>
-  <url><loc>https://zainababbas.com/finance-tools/</loc><lastmod>2026-06-20</lastmod><priority>0.8</priority></url>
+  <url><loc>https://zainababbas.com/</loc><lastmod>2026-06-21</lastmod><priority>1.0</priority></url>
+  <url><loc>https://zainababbas.com/projects/</loc><lastmod>2026-06-21</lastmod><priority>0.8</priority></url>
+  <url><loc>https://zainababbas.com/finance-tools/</loc><lastmod>2026-06-21</lastmod><priority>0.8</priority></url>
+  <url><loc>https://zainababbas.com/articles/</loc><lastmod>2026-06-21</lastmod><priority>0.8</priority></url>
+
+  <!-- Articles -->
+  <url><loc>https://zainababbas.com/articles/data-visualization-audience-first.html</loc><lastmod>2026-06-21</lastmod><priority>0.6</priority></url>
 
   <!-- Project case studies -->
-  <url><loc>https://zainababbas.com/clinic-financial-performance-dashboard/</loc><lastmod>2026-06-20</lastmod><priority>0.7</priority></url>
-  <url><loc>https://zainababbas.com/accounts-receivable-analytics/</loc><lastmod>2026-06-20</lastmod><priority>0.7</priority></url>
-  <url><loc>https://zainababbas.com/furniture-retail-sales-analytics/</loc><lastmod>2026-06-20</lastmod><priority>0.7</priority></url>
+  <url><loc>https://zainababbas.com/clinic-financial-performance-dashboard/</loc><lastmod>2026-06-21</lastmod><priority>0.7</priority></url>
+  <url><loc>https://zainababbas.com/accounts-receivable-analytics/</loc><lastmod>2026-06-21</lastmod><priority>0.7</priority></url>
+  <url><loc>https://zainababbas.com/furniture-retail-sales-analytics/</loc><lastmod>2026-06-21</lastmod><priority>0.7</priority></url>
 
   <!-- Finance calculators -->
-  <url><loc>https://zainababbas.com/finance-tools/forecast-simulator.html</loc><lastmod>2026-06-20</lastmod><priority>0.6</priority></url>
-  <url><loc>https://zainababbas.com/finance-tools/scenario-planner.html</loc><lastmod>2026-06-20</lastmod><priority>0.6</priority></url>
-  <url><loc>https://zainababbas.com/finance-tools/ebitda-simulator.html</loc><lastmod>2026-06-20</lastmod><priority>0.6</priority></url>
-  <url><loc>https://zainababbas.com/finance-tools/growth-capacity.html</loc><lastmod>2026-06-20</lastmod><priority>0.6</priority></url>
-  <url><loc>https://zainababbas.com/finance-tools/cash-runway.html</loc><lastmod>2026-06-20</lastmod><priority>0.6</priority></url>
-  <url><loc>https://zainababbas.com/finance-tools/break-even.html</loc><lastmod>2026-06-20</lastmod><priority>0.6</priority></url>
-  <url><loc>https://zainababbas.com/finance-tools/budget-variance.html</loc><lastmod>2026-06-20</lastmod><priority>0.6</priority></url>
-  <url><loc>https://zainababbas.com/finance-tools/pricing-impact.html</loc><lastmod>2026-06-20</lastmod><priority>0.6</priority></url>
-  <url><loc>https://zainababbas.com/finance-tools/customer-economics.html</loc><lastmod>2026-06-20</lastmod><priority>0.6</priority></url>
-  <url><loc>https://zainababbas.com/finance-tools/headcount-planning.html</loc><lastmod>2026-06-20</lastmod><priority>0.6</priority></url>
+  <url><loc>https://zainababbas.com/finance-tools/forecast-simulator.html</loc><lastmod>2026-06-21</lastmod><priority>0.6</priority></url>
+  <url><loc>https://zainababbas.com/finance-tools/scenario-planner.html</loc><lastmod>2026-06-21</lastmod><priority>0.6</priority></url>
+  <url><loc>https://zainababbas.com/finance-tools/ebitda-simulator.html</loc><lastmod>2026-06-21</lastmod><priority>0.6</priority></url>
+  <url><loc>https://zainababbas.com/finance-tools/growth-capacity.html</loc><lastmod>2026-06-21</lastmod><priority>0.6</priority></url>
+  <url><loc>https://zainababbas.com/finance-tools/cash-runway.html</loc><lastmod>2026-06-21</lastmod><priority>0.6</priority></url>
+  <url><loc>https://zainababbas.com/finance-tools/break-even.html</loc><lastmod>2026-06-21</lastmod><priority>0.6</priority></url>
+  <url><loc>https://zainababbas.com/finance-tools/budget-variance.html</loc><lastmod>2026-06-21</lastmod><priority>0.6</priority></url>
+  <url><loc>https://zainababbas.com/finance-tools/pricing-impact.html</loc><lastmod>2026-06-21</lastmod><priority>0.6</priority></url>
+  <url><loc>https://zainababbas.com/finance-tools/customer-economics.html</loc><lastmod>2026-06-21</lastmod><priority>0.6</priority></url>
+  <url><loc>https://zainababbas.com/finance-tools/headcount-planning.html</loc><lastmod>2026-06-21</lastmod><priority>0.6</priority></url>
 
 </urlset>
