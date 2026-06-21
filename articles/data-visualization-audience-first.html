@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Data Visualization: Always Keep Your Audience in Mind | Zainab Abbas</title>
+<meta name="description" content="Why the most detailed dashboard isn't the most useful one — a CFO's lesson in building data visualizations around the audience, not the data.">
+<link rel="canonical" href="https://zainababbas.com/articles/data-visualization-audience-first.html">
+<meta name="robots" content="index, follow">
+
+<!-- Social preview (used if the link is ever shared) -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Data Visualization: Always Keep Your Audience in Mind">
+<meta property="og:description" content="A CFO's lesson in building data visualizations around the audience, not the data.">
+<meta property="og:url" content="https://zainababbas.com/articles/data-visualization-audience-first.html">
+<meta property="og:image" content="https://zainababbas.com/assets/images/share-card-v2.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/png" href="https://zainababbas.com/favicon.png">
+
+<style>
+  :root{
+    --black:#000; --ink:#0d0d0d; --gold:#D4AF37; --gold-deep:#B8932B; --gold-bright:#E3C65C;
+    --text:#1f1f1f; --muted:#6b6b6b; --rule:rgba(0,0,0,.08);
+  }
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{ font-family:Arial, Helvetica, sans-serif; color:var(--text); background:#fff; line-height:1.8; }
+  a{ text-decoration:none; }
+  img{ max-width:100%; display:block; }
+
+  /* ---------- NAV ---------- */
+  .nav{ position:sticky; top:0; z-index:50; background:var(--black); }
+  .nav__inner{
+    max-width:1100px; margin:0 auto; padding:14px 6%;
+    display:flex; align-items:center; justify-content:space-between; min-height:64px;
+  }
+  .nav__inner .logo img{ height:42px; width:auto; display:block; }
+  .nav-back{ color:#fff; font-size:14px; font-weight:600; letter-spacing:.5px; transition:color .25s ease; }
+  .nav-back:hover{ color:var(--gold); }
+
+  /* ---------- ARTICLE HEADER (dark band) ---------- */
+  .post-head{ background:var(--black); color:#fff; padding:64px 6% 54px; }
+  .post-head__inner{ max-width:760px; margin:0 auto; }
+  .post-cat{ color:var(--gold); font-size:13px; font-weight:700; letter-spacing:3px; text-transform:uppercase; margin-bottom:18px; }
+  .post-title{ font-size:clamp(30px,5vw,46px); line-height:1.15; letter-spacing:-0.02em; color:#fff; margin-bottom:18px; }
+  .post-meta{ color:#b9b9b9; font-size:15px; }
+  .post-meta .dot{ color:var(--gold); margin:0 8px; }
+
+  /* ---------- ARTICLE BODY (light) ---------- */
+  .post{ max-width:720px; margin:0 auto; padding:56px 6% 40px; }
+  .post p{ font-size:18px; line-height:1.85; margin-bottom:24px; color:#2a2a2a; }
+  .post h2{ font-size:clamp(24px,3.5vw,30px); line-height:1.3; letter-spacing:-0.02em; color:var(--gold-deep); margin:44px 0 16px; }
+  .post h3{ font-size:21px; line-height:1.35; color:#1a1a1a; margin:32px 0 12px; }
+  .post ul, .post ol{ margin:0 0 24px 22px; }
+  .post li{ font-size:18px; line-height:1.8; margin-bottom:10px; }
+  .post a{ color:var(--gold-deep); border-bottom:1px solid rgba(184,147,43,.4); }
+  .post a:hover{ color:var(--gold); border-color:var(--gold); }
+  .post strong{ color:#111; }
+  .post blockquote{
+    margin:34px 0; padding:6px 0 6px 26px; border-left:4px solid var(--gold);
+    font-size:clamp(20px,2.6vw,24px); line-height:1.5; font-style:italic; color:var(--gold-deep);
+  }
+  .post hr{ border:none; border-top:1px solid var(--rule); margin:40px 0; }
+
+  /* ---------- AUTHOR / FOOTER ---------- */
+  .post-foot{ background:var(--ink); color:#ddd; border-top:1px solid rgba(212,175,55,.15); }
+  .post-foot__inner{ max-width:760px; margin:0 auto; padding:48px 6%; }
+  .bio{ display:flex; gap:18px; align-items:flex-start; }
+  .bio__mark{ font-family:Georgia, serif; color:var(--gold); font-size:34px; line-height:1; flex:none; }
+  .bio h4{ color:#fff; font-size:18px; margin-bottom:6px; }
+  .bio p{ color:#bdbdbd; font-size:15px; line-height:1.7; }
+  .post-foot__links{ margin-top:26px; display:flex; gap:22px; flex-wrap:wrap; }
+  .post-foot__links a{ color:var(--gold); font-weight:600; font-size:15px; }
+  .post-foot__links a:hover{ color:var(--gold-bright); }
+  .post-foot__base{ margin-top:28px; padding-top:18px; border-top:1px solid rgba(255,255,255,.08); color:#8a8a8a; font-size:13px; }
+
+  @media(max-width:600px){
+    .post-head{ padding:48px 6% 40px; }
+    .post{ padding:40px 6% 30px; }
+    .post p, .post li{ font-size:17px; }
+  }
+</style>
+</head>
+
+<body>
+
+<!-- ===================== NAV ===================== -->
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="https://zainababbas.com/" class="logo" aria-label="Home"><img src="https://zainababbas.com/logo.png" alt="Zainab Abbas"></a>
+    <a href="https://zainababbas.com/articles/" class="nav-back">← Back to articles</a>
+  </div>
+</nav>
+
+<!-- ===================== ARTICLE HEADER ===================== -->
+<header class="post-head">
+  <div class="post-head__inner">
+    <p class="post-cat">Business Intelligence</p>
+    <h1 class="post-title">Data Visualization: Always Keep Your Audience in Mind</h1>
+    <p class="post-meta">
+      <time datetime="2025-01-27">January 27, 2025</time>
+      <span class="dot">·</span> 2 min read
+    </p>
+  </div>
+</header>
+
+<!-- ===================== ARTICLE BODY ===================== -->
+<article class="post">
+
+  <p>As a financial expert, I've spent years diving deep into data — analysing every number, tweaking formulas, and creating visualizations that, to me, felt like the perfect representation of complex financial performance. Over time, I mastered the art of charts, graphs, and intricate dashboards. I had a whole toolbox full of ways to present financial data, each one more detailed and layered than the last.</p>
+
+  <p>But one day, as I was preparing a report for the senior management team, something didn't sit right. I had created a beautiful dashboard with dozens of graphs — bar charts, line graphs, pie charts, and scatter plots. Each one was designed to convey important insights, but as I looked at them, I realized something was missing.</p>
+
+  <p>I paused and thought:</p>
+
+  <blockquote>Who am I really presenting this to?</blockquote>
+
+  <p>The truth is, my audience wasn't filled with fellow financial analysts or data experts. They were top executives, shareholders, and team members from other departments. Many weren't focused on complex numbers, and to be honest, some didn't have the time or inclination to decipher detailed visualizations. What they needed wasn't more data — it was clarity.</p>
+
+  <p>That's when it clicked. I needed to simplify. Instead of showcasing everything I thought was important, I focused on what they would care about: key metrics, trends, and actionable insights. I pared down the visualizations to the essentials — clean, easy-to-read charts that told the story at a glance.</p>
+
+  <h2>The takeaway</h2>
+
+  <p>When you prioritize your audience, your data becomes more impactful. It's not about showcasing complex charts — it's about delivering clarity and ensuring the message is actionable.</p>
+
+</article>
+
+<!-- ===================== AUTHOR / FOOTER ===================== -->
+<footer class="post-foot">
+  <div class="post-foot__inner">
+    <div class="bio">
+      <span class="bio__mark" aria-hidden="true">ZA</span>
+      <div>
+        <h4>Zainab Abbas</h4>
+        <p>Chief Financial Officer (ACCA) writing on finance transformation, FP&amp;A, business intelligence and turning numbers into better decisions.</p>
+      </div>
+    </div>
+    <div class="post-foot__links">
+      <a href="https://zainababbas.com/articles/">← All articles</a>
+      <a href="https://zainababbas.com/">Portfolio</a>
+      <a href="https://www.linkedin.com/in/zainab-abbass/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <p class="post-foot__base">© 2026 Zainab Abbas · Chief Financial Officer · ACCA</p>
+  </div>
+</footer>
+
+</body>
+</html>
