@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
 /* =========================================================
    Zainab Abbas — Portfolio (main site)
    Palette : Black #000 · Panel #0d0d0d / #111 · Gold #D4AF37 / #E3C65C
@@ -8,7 +9,7 @@
 html{ scroll-behavior:smooth; }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Inter', system-ui, sans-serif;
     background:#ffffff;
     color:#111;
     line-height:1.8;
@@ -66,7 +67,7 @@ nav{
     box-shadow:0 15px 40px rgba(0,0,0,.35);
 }
 .hero-text{ max-width:700px; }
-.hero-text h1{ font-size:clamp(40px,6vw,72px); line-height:1.1; margin-bottom:12px; }
+.hero-text h1{ font-size:clamp(40px,6vw,72px); line-height:1.1; margin-bottom:4px; }
 .hero-eyebrow{
     color:#D4AF37; font-size:18px; font-weight:600;
     letter-spacing:2px; margin-bottom:15px;
@@ -80,18 +81,14 @@ nav{
 /* =========================================================
    BUTTONS
    ========================================================= */
-.btn{
-    display:inline-block; padding:14px 28px;
-    background:#D4AF37; color:#000; font-weight:bold;
-    border-radius:8px; margin:0 12px 12px 0;
-    border:2px solid #D4AF37;
+.btn, .btn-outline{
+    display:inline-block; min-width:210px; text-align:center;
+    padding:13px 24px; font-size:14px; letter-spacing:1px; text-transform:uppercase;
+    background:transparent; color:#D4AF37; font-weight:500;
+    border:1.5px solid #D4AF37; border-radius:6px; margin:0 12px 12px 0;
     transition:transform .25s ease, background .25s ease, color .25s ease;
 }
-.btn:hover{ transform:translateY(-3px); background:#E3C65C; border-color:#E3C65C; }
-
-/* outline variant (used on dark backgrounds) */
-.btn-outline{ background:transparent; color:#D4AF37; }
-.btn-outline:hover{ background:#D4AF37; color:#000; border-color:#D4AF37; }
+.btn:hover, .btn-outline:hover{ transform:translateY(-3px); background:#D4AF37; color:#000; border-color:#D4AF37; }
 
 /* =========================================================
    GENERIC SECTION
@@ -377,4 +374,12 @@ h1, h2, h3,
 .hero-text h1, .section-title, .about-title,
 .featured-title, .featured-subtitle{
     letter-spacing:-0.02em;
+}
+
+
+/* === Cormorant Garamond headings (Inter body set on <body>) === */
+h1, h2, h3,
+.hero-text h1, .hero-text h2,
+.section-title, .about-title, .featured-title, .metric-num{
+    font-family:'Cormorant Garamond', Georgia, serif;
 }
