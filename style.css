@@ -67,7 +67,7 @@ nav{
     box-shadow:0 15px 40px rgba(0,0,0,.35);
 }
 .hero-text{ max-width:700px; }
-.hero-text h1{ font-size:clamp(40px,6vw,72px); line-height:1.1; margin-bottom:4px; }
+.hero-text h1{ font-size:clamp(40px,6vw,72px); line-height:1.04; margin-bottom:2px; }
 .hero-eyebrow{
     color:#D4AF37; font-size:18px; font-weight:600;
     letter-spacing:2px; margin-bottom:15px;
@@ -382,4 +382,19 @@ h1, h2, h3,
 .hero-text h1, .hero-text h2,
 .section-title, .about-title, .featured-title, .metric-num{
     font-family:'Cormorant Garamond', Georgia, serif;
+}
+
+
+/* === filled gold buttons on light/white sections (outline stays on dark) === */
+#projects .btn, #projects .btn-outline,
+.tools .btn, .tools .btn-outline,
+.impact .btn, .impact .btn-outline,
+.credentials .btn, .credentials .btn-outline{
+    background:#D4AF37; color:#000; border-color:#D4AF37;
+}
+#projects .btn:hover, #projects .btn-outline:hover,
+.tools .btn:hover, .tools .btn-outline:hover,
+.impact .btn:hover, .impact .btn-outline:hover,
+.credentials .btn:hover, .credentials .btn-outline:hover{
+    background:#E3C65C; border-color:#E3C65C; color:#000;
 }
