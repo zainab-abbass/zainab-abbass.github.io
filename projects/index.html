@@ -16,6 +16,12 @@
 <link rel="icon" type="image/png" href="https://zainababbas.com/favicon.png">
 <link rel="stylesheet" href="https://zainababbas.com/style.css">
 <style>
+  #navbar .nav-back{ color:#fff; font-size:14px; font-weight:600; letter-spacing:.5px; transition:color .25s ease; }
+#navbar .nav-back:hover{ color:#D4AF37; }
+@media(max-width:760px){
+  #navbar .nav-back{ order:2; margin-left:auto; }
+  #navbar .nav-links{ order:3; }
+}
   /* small page-specific touches that reuse the site's variables/classes */
   .hub-head{ background:#000; color:#fff; padding:130px 10% 70px; }
   .hub-head .section-title{ color:#fff; margin-bottom:18px; }
@@ -36,6 +42,7 @@
     <li><a href="https://zainababbas.com/#tools">Tools</a></li>
     <li><a href="https://zainababbas.com/#contact">Contact</a></li>
   </ul>
+   <a class="nav-back" href="https://zainababbas.com/">← Back to portfolio</a>
 </nav>
 
 <!-- ===== HEADER ===== -->
@@ -46,7 +53,6 @@
     Finance transformation, business intelligence and executive reporting projects — built to improve
     visibility, decision-making and business performance across industries.
   </p>
-  <a class="hub-back" href="https://zainababbas.com/">← Back to portfolio</a>
 </header>
 
 <!-- ===== PROJECTS GRID ===== -->
